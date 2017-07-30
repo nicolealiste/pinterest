@@ -361,14 +361,12 @@ var miJSON=[{
 	$(document).ready(function(){
 		$.each(miJSON, function(i,item){
 			console.log(miJSON[i].image_url);
-			$(".all-pin").append("<div class='contenedor-pin'><div class='each-pin" + miJSON[i].id + "'><img src='dist/img/" + miJSON[i].image_url + "'></div></div>");
+			$(".all-pin").append("<div class='contenedor-pin'><div class='pins each-pin" + miJSON[i].id + "'><img src='dist/img/" + miJSON[i].image_url + "'></div></div>");
 			console.log(miJSON[i].title);
 			$(".each-pin"+miJSON[i].id).append("<h5 class='each-pin-title'>" + miJSON[i].title + "</h5>" );
 			console.log(miJSON[i].description);
 			$(".each-pin"+miJSON[i].id).append("<p class='each-pin-description'>" + miJSON[i].description + "</p>");
-			console.log(miJSON[i].user);
-			$(".each-pin"+miJSON[i].id).append("<h6 class='each-pin-user'><i class='fa fa-user-circle' aria-hidden='true'></i>" + miJSON[i].user + "</h6>");		
-			console.log(miJSON[i].hashtag);
-			$(".each-pin"+miJSON[i].id).append("<h6 class='each-pin-hashtag'>" + miJSON[i].hashtag + "</h6><br>");
+			console.log(miJSON[i].user, miJSON[i].hashtag);
+			$(".each-pin"+miJSON[i].id).append("<div class='user-info'><i class='fa fa-user-circle' aria-hidden='true'></i><div class='user-pin'><h6 class='each-pin-user'>" + miJSON[i].user + "</h6><h6 class='each-pin-hashtag'>" + miJSON[i].hashtag + "</h6></div></div>");				
 		})
 	})
