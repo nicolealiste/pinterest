@@ -14,11 +14,13 @@ body{
 					color:$red;
 					font-size: 32px;
 					margin-left: 20px;
-					margin-top:10px; 
+					margin-top:10px;
+					cursor:pointer; 
 				}
 				.navbar-ini{
 					color:$grey;
 					font-weight: bold;
+					cursor:pointer;
 				}
 				.navbar-icon{
 					float:right;
@@ -27,6 +29,7 @@ body{
 					padding-left:30px;
 					padding-top: 10px;
 					color: $grey;
+					cursor:pointer;
 				}
 				input{
 					padding-left:10px;
@@ -61,10 +64,12 @@ body{
 		i{
 			color:$grey;
 			font-size:20px;
+			cursor:pointer;
 		}
 		button{
 			margin:0;
 			height: 40px;
+			cursor:pointer;
 			border-right:none ;
 			border-top: none;
 			border-bottom: none;
@@ -83,6 +88,7 @@ body{
 		}
 	}
 	.navbar-user{
+		cursor:pointer;
 		.fa-user{
 			padding-left:10px;
 			padding-top:10px;
@@ -97,5 +103,50 @@ body{
 //linea
 	hr{
 		border: 1px solid $bgGrey;
+	}
+//botones
+	.botones{
+		margin-top: 25px;
+		margin-left:40px;
+		a{
+			text-decoration:none;
+			padding-right: 20px;
+			padding-left: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			margin-right: 2px;
+			cursor:pointer;
+			font-size: 14px;
+			font-weight:bold;
+			color:$white;
+		}
+		.bg1{
+			opacity: 0.8;
+			background-color: $bg1;
+			border-radius: 8px;
+		}
+		.bg2{
+			opacity: 0.8;
+			background-color: $bg2;
+			border-radius: 8px;
+		}
+		.bg3{
+			opacity: 0.8;
+			background-color: $bg3;
+			border-radius: 8px;
+		}
+		.bg4{
+			opacity: 0.8;
+			background-color: $bg4;
+			border-radius: 8px;
+		}
+		.bg5{
+			opacity: 0.8;
+			background-color: $bg5;
+			border-radius: 8px;
+		}
+		i{
+			color:$grey;
+		}
 	}
 }
