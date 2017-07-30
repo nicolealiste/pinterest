@@ -154,14 +154,59 @@ body{
 			color:$grey;
 		}
 	}
+	.container{
+		margin-top: 50px;
+		margin-left: 20px;
+	}
 	.all-pin{
-		.each-pin{
+		.contenedor-pin{
+			padding-right:14px;
+			float: left;
+			position: relative;
 			img{
-				border-radius:6px;
-				width: 236px;
-				height: auto;
-				//float: left;
+			border-radius:6px;
+			width: 236px;
+			height: auto;				
 			}
-		}
+			.each-pin-title{
+				max-width: 145px;
+				font-size:14px;
+				font-weight: bold;
+				color:$inputGrey;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				margin-top: 4px;
+				margin-bottom: 6px;
+				letter-spacing: -0.15px;
+    			line-height: 16px;
+    			word-spacing: 0;
+			}
+			.each-pin-description{
+				max-width: 145px;
+				font-size: 12px;
+				padding: 0px;
+				margin-top: 0px;
+				margin-bottom: 6px;				
+			    letter-spacing: -0.1px;
+			    line-height: 14px;
+			    word-spacing: 0;
+			}
+			.each-pin-user{
+				font-size: 11px;
+				color:$user;
+				font-weight:bold;
+				padding: 0px;
+				margin: 0px;
+				.fa-user{
+					font-size: 20px !important;
+				}
+			}
+			.each-pin-hashtag{
+				font-size: 10px;
+				color:$user;
+				padding: 0px;
+				margin: 0px;
+			}	
+		}			
 	}
 }
