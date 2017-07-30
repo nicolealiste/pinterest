@@ -1,0 +1,97 @@
+body{
+	background:$white;
+	font-family: 'Roboto', sans-serif;
+
+	nav{
+		ul{	
+			margin: 0;
+			padding: 0;		
+			li{
+				list-style:none;
+				float: left;
+				margin-right: 10px;
+				.navbar-pin-logo{
+					color:$red;
+					font-size: 32px;
+					margin-left: 20px;
+					margin-top:10px; 
+				}
+				.navbar-ini{
+					color:$grey;
+					font-weight: bold;
+				}
+				.navbar-icon{
+					float:right;
+					font-size: 30px;
+					font-weight:bold;
+					padding-left:30px;
+					padding-top: 10px;
+					color: $grey;
+				}
+				input{
+					padding-left:10px;
+					padding-right:450px;
+					border: none;
+					font-size:14px;
+					font-weight: bold;
+					background-color: transparent;
+					color:$inputGrey;
+					&:focus {
+						outline: none;
+						font-weight: bold;
+					}
+				}				
+			}
+		}
+	}
+	.group:before,
+	.group:after {
+		content: "";
+		display: table;
+	}
+	.group:after {
+		clear:both;
+	}
+	#navbar-li-input{
+		background-color:$bgGrey;
+		margin-top: 7px;
+		margin-left:20px;
+		padding-left:10px;
+		padding-right: 10px;		
+		i{
+			color:$grey;
+			font-size:20px;
+		}
+		button{
+			margin:0;
+			height: 40px;
+			border-right:none ;
+			border-top: none;
+			border-bottom: none;
+			background-color:  transparent;
+			font-size:14px;
+			color:$inputGrey;
+			font-weight: bold;
+			padding-left: 10px;
+			&:focus {
+				outline: none;
+				font-weight: bold;
+			}
+			.fa-chevron-down{
+				color:$inputGrey;	
+			}
+		}
+	}
+	.navbar-user{
+		.fa-user{
+			padding-left:20px;
+			padding-top:10px;
+			float:right;
+			font-size: 30px;
+			color: $grey;
+		}
+		p{
+			padding-right: 15px;
+		}
+	}
+}
