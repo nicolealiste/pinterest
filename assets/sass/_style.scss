@@ -26,7 +26,7 @@ body{
 					float:right;
 					font-size: 30px;
 					font-weight:bold;
-					padding-left:30px;
+					padding-left:20px;
 					padding-top: 10px;
 					color: $grey;
 					cursor:pointer;
@@ -57,6 +57,7 @@ body{
 	}
 	#navbar-li-input{
 		background-color:$bgGrey;
+		border-radius:4px;
 		margin-top: 7px;
 		margin-left:20px;
 		padding-left:10px;
@@ -65,6 +66,9 @@ body{
 			color:$grey;
 			font-size:20px;
 			cursor:pointer;
+		}
+		.fa-times{
+			margin-right: 10px;
 		}
 		button{
 			margin:0;
@@ -90,7 +94,7 @@ body{
 	.navbar-user{
 		cursor:pointer;
 		.fa-user{
-			padding-left:10px;
+			margin-left:10px;
 			padding-top:10px;
 			float:right;
 			font-size: 30px;
@@ -107,7 +111,7 @@ body{
 //botones
 	.botones{
 		margin-top: 25px;
-		margin-left:40px;
+		margin-left:50px;
 		a{
 			text-decoration:none;
 			padding-right: 20px;
@@ -148,6 +152,16 @@ body{
 		i{
 			margin-left: 10px;
 			color:$grey;
+		}
+	}
+	.all-pin{
+		.each-pin{
+			img{
+				border-radius:6px;
+				width: 236px;
+				height: auto;
+				//float: left;
+			}
 		}
 	}
 }
