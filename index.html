@@ -3,53 +3,83 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pinterest</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
-	<nav class="navbar group">
-		<ul>
-			<div class="navbar-input">
-				<li><i class="fa fa-pinterest navbar-pin-logo" aria-hidden="true"></i></li>
-				<li><p class="navbar-ini">Inicio</p></li>
-			</div>
-			<li id="navbar-li-input">
-				<i class="fa fa-search" aria-hidden="true"></i>
-				<input type="text" placeholder="Busqueda">
-				<i class="fa fa-times" aria-hidden="true"></i>
-				<button>Todos los Pines <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+	<header>
+		<ul class="a-menu">
+			<!--  <li><a class="red" href="#"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a></li> -->
+
+			<li><a href="#" class="red"><span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a>
 			</li>
-			<div class="navbar-user">
-				<li><i class="fa fa-user" aria-hidden="true"></i></li>
-				<li><p class="navbar-ini">Guardado</p></li>
-			</div>
-			<li><i class="fa fa-bars navbar-icon" aria-hidden="true"></i></li>
-			<li><i class="fa fa-commenting navbar-icon" aria-hidden="true"></i></li>
+			<li class="input-caja">
+				<div class="caja-lupa">
+					<i class="fa fa-search" aria-hidden="true"></i>
+					<input type="text" placeholder="wedding">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</div>
+				<div class="caja-pins">
+					<span>All Pins <i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+				</div>
+			</li>
+			<li><a href="#"><span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x white"></i>
+			  <i class="fa fa-user fa-stack-1x"></i></span></a>
+			</li>
+			<li><a href="#"><span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x white"></i>
+			  <i class="fa fa-bars fa-stack-1x"></i></span></a>
+			</li>
+			<li><a href="#"><span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x white"></i>
+			  <i class="fa fa-commenting fa-stack-1x"></i></span></a>
+			</li>
 		</ul>
-	</nav>
-	<hr>
-	<section class="botones">
-		<a href="#" class="bg1">Dress</a>
-		<a href="#" class="bg2">San Miguel de Allende</a>
-		<a href="#" class="bg1">Friki</a>
-		<a href="#" class="bg3">Invitaciones</a>
-		<a href="#" class="bg4">Photography</a>
-		<a href="#" class="bg4">Photocall</a>
-		<a href="#" class="bg5">Damas</a>
-		<a href="#" class="bg2">Ilumination</a>
-		<a href="#" class="bg5">Ramo</a>
-		<a href="#" class="bg3">Souvenirs</a>
-		<i class="fa fa-chevron-right" aria-hidden="true"></i>
-	</section>
-	<div class="container">
-		<div>
-			<div class="all-pin">
-				<!-- Aqui va cada pin -->
+		<ul class="sub-menu">
+			<div class="botones botones-1">
+				<p class="light">Ideas</p>
 			</div>
-		</div>
+			<div class="botones botones-2">
+				<p>Dresses</p>
+			</div>
+			<div class="botones botones-3">
+				<p class="light">Colors</p>
+			</div>
+			<div class="botones botones-4">
+				<p>Games</p>
+			</div>
+			<div class="botones botones-5">
+				<p class="light">Decorations</p>
+			</div>
+			<div class="botones botones-6">
+				<p>Rings</p>
+			</div>
+			<div class="botones botones-7">
+				<p class="light">Hairstyles</p>
+			</div>
+			<div class="botones botones-8">
+				<p>Planning</p>
+			</div>
+			<div class="botones botones-9">
+				<p class="light">Fall</p>
+			</div>
+		</ul>
+	</header>
+ 
+	<section id="imagenes" class="imagenes">
+		<!-- Aqui can los post de pinterest -->
+	</section> 
+
+	<div class="loading">
+		<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+		<span class="sr-only">Loading...</span>
 	</div>
+
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
-	<script src="assets/js/ajax.js"></script>
+	<script src="dist/js/script.js"></script>
+	<script src="assets/js/data.js"></script>
 </body>
 </html>
